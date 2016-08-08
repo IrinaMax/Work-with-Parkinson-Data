@@ -1,0 +1,27 @@
+#In R, kmeans performs the K-means clustering analysis, ()$cluster provides the clustering results and ()$centers provides the centroid vector (i.e., the mean) for each cluster.
+#For the convenience of visualization, we take the first two principle components as the new feature variables and conduct k-means only on these two dimensional data.
+
+X <- cbind(pc.comp1, pc.comp2)
+cl <- kmeans(X,13)
+cl$cluster
+plot(pc.comp1, col=cl$cluster)
+legend(x-NULL, pc.comp1,legend = 1, col=cl$centers, border="black" )
+plot(pc.comp2, col= cl$cluster)
+points(cl$centers, pch=18)
+
+library(cluster)
+## Plot of the dendrogram with average method
+agn <- agnes(x=predictorXpark[1:50,], diss = FALSE, stand = TRUE, 
+             method = "average")
+DendAgn <-as.dendrogram(agn)
+plot(DendAgn)
+
+agn <- agnes(x=predictorXpark[25,], diss = FALSE, stand = TRUE,
+             method = "single")
+DendAgn <-as.dendrogram(agn)
+plot(DendAgn)
+
+agn <- agnes(x=predictorXpark[1:125,], diss = FALSE, stand = TRUE,
+             method = "complete")
+DendAgn <-as.dendrogram(agn)
+plot(DendAgn)
