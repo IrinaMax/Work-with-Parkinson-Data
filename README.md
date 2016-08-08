@@ -4,22 +4,22 @@ It is just simply my trials to analize data set with people have parkinson on th
 ## my work with Parkinson data  "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/?C=D;O=A"
 ## description "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.names" 
 
-park <- read.csv("http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data", header = T, stringsAsFactors = T)
-head(park, 20)
+    park <- read.csv("http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data", header = T, stringsAsFactors = T)
+    head(park, 20)
 #In this data I try to find the response variable; and the remaining columns are the predictor variables.
 
 
-park$subject.
-mean(park$age)
+    park$subject.
+    mean(park$age)
 # comma delimited data and no header for each variable
 
-dim()
-responseYpark <- park[, 3]
-predictorXpark <- park[,1:(dim(park)[2])]
-responseYpark
-predictorXpark
+    dim()
+    responseYpark <- park[, 3]
+    predictorXpark <- park[,1:(dim(park)[2])]
+    responseYpark
+    predictorXpark
 
-pca <- princomp(predictorXpark, cor=T, scores = TRUE)# principal components analysis using correlation matrix
+    pca <- princomp(predictorXpark, cor=T, scores = TRUE)# principal components analysis using correlation matrix
 
 pca
 pc.comp <- pca$scores
