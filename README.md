@@ -38,18 +38,20 @@ For the convenience of visualization, we take the first two principle components
     points(cl$centers, pch=15)
 
     library(cluster)
+    
 Plot of the dendrogram with average method
+
      agn <- agnes(x=predictorXpark[1:50,], diss = FALSE, stand = TRUE, 
                  method = "average")
     DendAgn <-as.dendrogram(agn)
     plot(DendAgn)
 
-agn <- agnes(x=predictorXpark[1:25,], diss = FALSE, stand = TRUE,
+    agn <- agnes(x=predictorXpark[1:25,], diss = FALSE, stand = TRUE,
              method = "single")
-DendAgn <-as.dendrogram(agn)
-plot(DendAgn)
+    DendAgn <-as.dendrogram(agn)
+    plot(DendAgn)
 
-agn <- agnes(x=predictorXpark[1:25,], diss = FALSE, stand = TRUE,
+    agn <- agnes(x=predictorXpark[1:25,], diss = FALSE, stand = TRUE,
              method = "complete")
-DendAgn <-as.dendrogram(agn)
-plot(DendAgn)
+    DendAgn <-as.dendrogram(agn)
+    plot(DendAgn)
