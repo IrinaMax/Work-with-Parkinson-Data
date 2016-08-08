@@ -6,12 +6,12 @@ It is just simply my trials to analize data set with people have parkinson on th
 
     park <- read.csv("http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data", header = T, stringsAsFactors = T)
     head(park, 20)
-#In this data I try to find the response variable; and the remaining columns are the predictor variables.
+In this data I try to find the response variable; and the remaining columns are the predictor variables.
 
 
     park$subject.
     mean(park$age)
-# comma delimited data and no header for each variable
+ comma delimited data and no header for each variable
 
     dim()
     responseYpark <- park[, 3]
