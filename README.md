@@ -14,7 +14,7 @@ mean(park$age)
 # comma delimited data and no header for each variable
 
 dim()
-responseYpark <- park[2, dim(park)[2]]
+responseYpark <- park[, 3]
 predictorXpark <- park[,1:(dim(park)[2])]
 responseYpark
 predictorXpark
