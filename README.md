@@ -1,5 +1,5 @@
 # Analysing Parkinsons Telemonitoring Data Set.
-My work with aprkinson Telemonitoring Data set was interested and ispired of many people who have this tragic
+My work with Paprkinson Telemonitoring Data set was interested and ispired of many people who have this tragic
 disease from nowhere :( I really would like to do something to help with analyse and work with any medical data.
 It is just simply my trials to analize data set with people have parkinson on the erly stage using PCA and K-clustering analysis.
 
