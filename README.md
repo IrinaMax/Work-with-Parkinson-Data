@@ -37,7 +37,7 @@ In this data I try to find the response variable; and the remaining columns are 
     plot(pca$scores)
     pca$scores
 In R, kmeans performs the K-means clustering analysis, ()$cluster provides the clustering results and ()$centers provides the centroid vector (i.e., the mean) for each cluster.
-For the convenience of visualization, we take the first two principle components as the new feature variables and conduct k-means only on these two dimensional data.
+For the convenience of visualization, I take the first two principle components as the new feature variables and conduct k-means only on these two dimensional data.
 
     X <- cbind(pc.comp1, pc.comp2)
     cl <- kmeans(X,13)
