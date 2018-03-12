@@ -63,3 +63,5 @@ Plot of the dendrogram with average method
              method = "complete")
     DendAgn <-as.dendrogram(agn)
     plot(DendAgn)
+    
+    https://github.com/IrinaMax/Work-with-Parkinson-Data/blob/master/Rplot_CHAID_park_sex.factor.png
