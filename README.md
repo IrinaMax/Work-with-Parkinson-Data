@@ -46,8 +46,9 @@ For the convenience of visualization, I take the first two principle components 
     points(cl$centers, pch=15)
 
     library(cluster)
-    
-    ![plot_clust_1pca_copm_park](https://user-images.githubusercontent.com/16123495/38159815-963b5398-3465-11e8-85db-c66cb9c4654b.png)
+        
+![plot_clust_1pca_copm_park](https://user-images.githubusercontent.com/16123495/38159815-963b5398-3465-11e8-85db-c66cb9c4654b.png)
+
 Plot of the dendrogram with average method
 
      agn <- agnes(x=predictorXpark[1:50,], diss = FALSE, stand = TRUE, 
