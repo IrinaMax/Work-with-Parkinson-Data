@@ -1,16 +1,16 @@
 # Analysing Parkinsons Telemonitoring Data Set.
 My work with Paprkinson Telemonitoring Data set was  inspired  by many people who have this tragic disease from nowhere :( 
-I always was interested to work with medical data and I really would like to do something to help effected people. Analyse and work with Parkinson Telemonitoring Datase was created by Athanasios Tsanas (tsanasthanasis '@' gmail.com) 
+I always was interested to work with medical data and I really would like to do something to help effected people. Parkinson Telemonitoring Datase was created by Athanasios Tsanas (tsanasthanasis '@' gmail.com) 
 and Max Little (littlem '@' physics.ox.ac.uk) of the University of Oxford, in 
 collaboration with 10 medical centers in the US and Intel Corporation who 
 developed the telemonitoring device to record the speech signals.
 
-So here are PCA and K-clustering analysis with the dataset. 
+I perform PCA and K-clustering analysis with the dataset. 
 
 This datase is composed of a range of biomedical voice measurements from 42 people with early-stage Parkinson's disease recruited to a six-month trial of a telemonitoring device for remote symptom progression monitoring. The recordings were automatically captured in the patient's homes.
 
-## my work with Parkinson data  "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/?C=D;O=A"
-## description "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.names" 
+ my work with Parkinson data  "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/?C=D;O=A"
+ description "http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.names" 
 
     park <- read.csv("http://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/telemonitoring/parkinsons_updrs.data", header = T, stringsAsFactors = T)
     head(park, 20)
